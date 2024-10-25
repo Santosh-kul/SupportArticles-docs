@@ -29,17 +29,13 @@ Put the Terminal Server computers into their own organizational unit (OU). This 
 
 To create a new OU for the Terminal Services servers, follow these steps:
 
-1. Click Start, point to Programs, point to Administrative Tools, and then click **Active Directory Users and Computers**.
-2. Expand the left pane.
-3. Click **`domainname.xxx`**.
-4. On the Action menu, click New, and then click Organizational Unit.
-5. In the Name box, type a name for the Terminal Services server.
-6. Click OK.
-
-    The new Terminal Services OU now appears in the list in the left pane and contains no default objects. The Terminal Services servers reside in either the Computers OU or the Domain Controllers OU.  
-7. Locate and then click the Terminal Services server or servers, click Action, and then click Move.
-8. In the Move dialog box, click the new Terminal Services server or servers, and then click OK.
-9. Click the new Terminal Services OU to verify that the move has successfully occurred.  
+1. Log in to a domain controller or a machine with the Remote Server Administration Tools (RSAT) installed.
+2. Open the Start Menu and type “Active Directory Users and Computers”. Click on it to open.
+3. In the Active Directory Users and Computers console, navigate to the domain or container where you want to create the new OU.
+4. Right-click on the domain or container.
+5. Select New > Organizational Unit.
+6. In the New Object - Organizational Unit dialog box, enter “Terminal Servers” as the name.
+7. Click OK to create the OU.
 
 To create a Terminal Services Group Policy object, follow these steps:
 
